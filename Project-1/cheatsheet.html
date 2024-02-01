@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet | ONLY HTML</title>
+</head>
+
+<body>
+    <h2 align="center">
+        HTML : Hyper Text Markup Language
+    </h2>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Page Structure   -->
+    <h3>HTML Page Structure :</h3>
+    <hr align="left" width="40%">
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;WebPage Title&lt;/title&gt;
+            &lt;!-- Link CSS --&gt;
+            &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+            &lt;!-- Body Content --&gt;
+
+            &lt;!-- Add JS --&gt;
+            &lt;script src="script.js"&gt;&ls;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Heading Tags   -->
+    <h3>Heading Tags :</h3>
+    <hr align="left" width="40%">
+    <h1>&lt;h1&gt;&lt;/h1&gt;</h1>
+    <h2>&lt;h2&gt;&lt;/h2&gt;</h2>
+    <h3>&lt;h3&gt;&lt;/h3&gt;</h3>
+    <h4>&lt;h4&gt;&lt;/h4&gt;</h4>
+    <h5>&lt;h5&gt;&lt;/h5&gt;</h5>
+    <h6>&lt;h6&gt;&lt;/h6&gt;</h6>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Text Formatting Tags   -->
+    <h3>Text Formatting Tags :</h3>
+    <hr align="left" width="40%">
+    <ul>
+        <li>&lt;p&gt; : <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+        </li>
+        <br>
+        <li>&lt;strong&gt; : <Strong>Strong Text</Strong></li>
+        <br>
+        <li>&lt;em&gt; : <em>Emphasis Text</em></li>
+        <br>
+        <li>&lt;s&gt; : <s>Strikethorugh Text</s></li>
+        <br>
+        <li>&lt;sup&gt; : Super<sup>Script</sup></li>
+        <br>
+        <li>&lt;sub&gt; : Sub<sub>Script</sub></li>
+        <br>
+    </ul>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Comments   -->
+    <h3>Comments :</h3>
+    <hr align="left" width="40%">
+    &lt;!-- This is Comment --&gt;
+
+    <hr>
+    <hr>
+    <br>
+    <!-- ID & Classes   -->
+    <h3>ID & Classes :</h3>
+    <hr align="left" width="40%">
+    <ul>
+        <li>ID : &lt;p id="myUniqueID"&gt;This is a &lt;p&gt; with an ID.&lt;/p&gt;</li>
+        <li>Classes : &lt;p class="myClass1 myClass2"&gt;This is a &lt;p&gt; with classes.&lt;/p&gt;</li>
+    </ul>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Tables   -->
+    <h3>HTML Tables :</h3>
+    <hr align="left" width="40%">
+    <table border="1" width="100%">
+        <tr>
+            <td>
+                <pre>
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;A&lt;/th&gt;
+            &lt;th&gt;B&lt;/th&gt;
+            &lt;th&gt;C&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;5&lt;/td&gt;
+            &lt;td&gt;6&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+            </pre>
+            </td>
+
+            <td>
+                <table border="1">
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- hr & br   -->
+    <h3>hr & br :</h3>
+    <hr align="left" width="40%">
+    <table width="100%">
+        <tr>
+            <td>&lt;hr&gt; :</td>
+            <td>Horizontal Line
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt; :</td>
+            <td>Line<br>Breaks </td>
+        </tr>
+    </table>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- Links   -->
+    <h3>Links :</h3>
+    <hr align="left" width="40%">
+    <table>
+        <tr>
+            <td>
+                <pre>&lt;a href="https://www.google.com/"&gt; Open Google &lt;/a&gt; :</pre>
+            </td>
+            <td><a href="https://www.google.com/">Open Google</a></td>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;a href="https://www.youtube.com/" target="_blank"&gt; Open Youtube &lt;/a&gt;</pre> :
+            </td>
+            <td><a href="https://www.youtube.com/" target="_blank">Open Youtube</a></td>
+        </tr>
+    </table>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- Images   -->
+    <h3>Images :</h3>
+    <hr align="left" width="40%">
+    <pre>&lt;img src="ss.png" alt=""&gt; :</pre>
+    <img src="ss.png" alt="">
+
+    <hr>
+    <hr>
+    <br>
+    <!-- Pre Tag   -->
+    <h3>Pre Tag:</h3>
+    <hr align="left" width="40%">
+    <table border="1" width="100%">
+        <tr>
+            <td>
+                &lt;pre&gt;<br>
+                &lt;!-- code snippet in any programming language --&gt;
+                <br>print("Hello World!") <br>
+                &lt;/pre&gt;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre>
+                <!-- code snippet in any programming language -->
+                print("Hello World!")
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- Pre Tag   -->
+    <h3>Inline & Block Element:</h3>
+    <hr align="left" width="40%">
+    <p style="border: 1px solid black;"> &lt;p&gt;&lt;/p&gt; : Block element</p>
+    <span style="border: 1px solid black;"> &lt;span&gt;&lt;/span&gt; : Inline element</span>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- Pre Tag   -->
+    <h3>HTML Lists:</h3>
+    <hr align="left" width="40%">
+    <ul>
+        <li>Ordered List:
+            <table border="1" width="100%">
+                <tr>
+                    <td>
+                        <pre>
+&lt;ol&gt;
+&lt;li>First&lt;/li&gt;
+&lt;li>Second&lt;/li&gt; 
+&lt;li>Third&lt;/li&gt; 
+&lt;/ol&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <br>
+        <li>Unordered List:
+            <table border="1" width="100%">
+                <tr>
+                    <td>
+                        <pre>
+&lt;ul&gt;
+&lt;li>First&lt;/li&gt;
+&lt;li>Second&lt;/li&gt; 
+&lt;li>Third&lt;/li&gt; 
+&lt;/ul&gt;
+                        </pre>
+                    <td>
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <br>
+        <li>Definition List :
+            <table border="1" width="100%">
+                <tr>
+                    <td>
+                        <pre>
+&lt;dl&gt; 
+&lt;dt>HTML&lt;/dt&gt; 
+&lt;dt>Hyper Text Markup Language&lt;/dt&gt; 
+&lt;/dl&gt;
+                            </pre>
+                    </td>
+                    <td>
+                        <dl>
+                            <dt>HTML</dt>
+                            <dt>Hyper Text Markup Language</dt>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Forms   -->
+    <h3>HTML Forms:</h3>
+    <hr align="left" width="40%">
+    <form action="/" method="post" align="center" style="border: 1px solid red;">
+        <br>
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input style="width: 80%;" type="text" id="username" name="username"
+            placeholder="&lt;input type='text' id='username' name='username' required&gt;">
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input style="width: 80%;" type="password" id="password" name="password"
+            placeholder="&lt;input type='password' id='password' name='password' required&gt;" required>
+        <br><br>
+
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <hr>
+    <br>
+    <!-- HTML Media   -->
+    <h3>HTML Media:</h3>
+    <hr align="left" width="40%">
+    <ul>
+        <li>
+            <h4>Video</h4>
+            <table border="1" width="100%">
+                <tr>
+                    <td>
+                        <pre>
+&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+                            </pre>
+                    </td>
+                    <td><video src="video.mp4" controls></video></td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <h4>Audio</h4>
+            <table border="1" width="100%">
+                <tr>
+                    <td>
+                        <pre>
+&lt;audio src="video.mp4" controls&gt;&lt;/audio&gt;
+                            </pre>
+                    </td>
+                    <td><audio src="audio.mp4" controls></audio></td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <hr>
+    <p align="right">&copy;OnlyHTML2024</p>
+    <hr>
+</body>
+
+</html>

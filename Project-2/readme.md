@@ -39,7 +39,7 @@ Welcome to my HTML Landing Page project! This page is a simple yet effective lan
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/your-username/my-web-dev-evolution.git`
+1. Clone the repository: `git clone https://github.com/RahulP-Here/my-web-dev-evolution.git`
 2. Open [`landing_page.html`](landing_page.html) in a web browser to view the HTML Landing Page.
 
 Feel free to use this landing page as a template or reference for creating HTML-based web pages.

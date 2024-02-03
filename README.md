@@ -8,7 +8,9 @@ This repository serves as a visual timeline of my coding evolution. From basic H
 
 ## Projects
 
+- **[Project 2: HTML Landing Page](./Project-2/)**
 - **[Project 1: HTML CheatSheet](./Project-1/)**
+
 - Projects will upload Here ...
 
 ## How to Use

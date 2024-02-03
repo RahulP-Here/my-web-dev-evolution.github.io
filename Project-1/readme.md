@@ -56,7 +56,7 @@ Welcome to my HTML Cheatsheet project! This file, named `cheatsheet.html`, serve
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/your-username/my-web-dev-evolution.git`
+1. Clone the repository: `git clone https://github.com/RahulP-Here/my-web-dev-evolution.git`
 2. Open [`cheatsheet.html`](cheatsheet.html) in a web browser to explore the HTML cheatsheet.
 
 Feel free to use this cheatsheet as a quick reference or as a learning resource for understanding HTML elements and their usage.

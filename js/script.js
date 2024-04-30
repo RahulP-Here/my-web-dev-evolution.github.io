@@ -8,7 +8,7 @@ let cards = {
     tech: [
         ["HTML5"],
     ],
-    view: ['./Project-1/index.html']
+    view: ['./Project-1/details.html']
 }
 
 Array.from(cards.logo_img).forEach((element, index) => {

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --primary: rgb(255, 95, 21);
+    --secondary: #14213D;
+    --white: white;
+    --pwhite:#e1e2e5;
+    --blue: rgb(20, 33, 61);
+    --font1: 'Teko', sans-serif;
+    --font2: 'Kelly Slab', cursive;
+}
+
+body{
+    background-color: rgb(224, 225, 228);
+}
+a{
+    text-decoration: none;
+}
+
+
+.theme-color{
+    color: var(--primary);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1600px) {
+   #home{
+        margin: auto;
+    }
+
+    #text {
+        font-size: 8rem !important;
+    }
+}
+
+
+

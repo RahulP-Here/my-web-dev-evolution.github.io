@@ -7,7 +7,7 @@ Welcome to my HTML Landing Page project! This page is a simple yet effective lan
 ## Project Structure
 
 - **File:** [`landing_page.html`](index.html)
-- **View Live:** [`landing_page`](index.html)
+- **View Live:** [`landing_page`](https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-2/index.html)
 
 - **Description:** A minimalist landing page showcasing the use of HTML for creating a webpage.
 - **Language:** Pure HTML

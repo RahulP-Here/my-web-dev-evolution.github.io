@@ -2,13 +2,20 @@
 /*FOR PROJECT-CARD*/
 
 let cards = {
-    logo_img: ['./Project-1/img/logo/logo.png'],
-    title: ['HTML Cheatsheet'],
-    desc:['HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax'],
+    logo_img: ['./Project-1/img/logo/logo.png', './Project-2/img/logo.png'],
+    title: ['HTML Cheatsheet', 'HTML Landing Page'],
+    desc:[
+        'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
+        'HTML Landing Page is a simple yet effective landing page created entirely using HTML.'
+    ],
     tech: [
         ["HTML5"],
+        ["HTML5"],
     ],
-    view: ['./Project-1/details.html']
+    view: [
+        './Project-1/details.html',
+        './Project-2/readme.html',
+    ]
 }
 
 Array.from(cards.logo_img).forEach((element, index) => {

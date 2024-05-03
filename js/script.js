@@ -53,14 +53,9 @@ Array.from(cards.logo_img).forEach((element, index) => {
         <a href="${view}" class="btn">View Project</a>
     `;
 
-    document.body.querySelector('.container').appendChild(project);
-
+    let container = document.body.querySelector('.container');
+    container.insertBefore(project, container.firstChild);
 });
-
-
-// let project = document.createElement('div');
-// project.classList.add('project-card');
-// document.body.querySelector('.Questions').appendChild(div);
 
 {/* <div class="project-card">
                 <div class="title">

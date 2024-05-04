@@ -210,8 +210,12 @@ h2 {
 
 
 .project-card p {
+    margin: 20px 5px 10px 8px;
     font-size: 1.01em;
     line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-bottom: 10px;
 }
 

@@ -13,6 +13,18 @@
             background-color: #f8f8f8;
         }
 
+        .title{
+            display: flex;
+            position: relative;
+            left: -1rem;
+            align-items: center;
+            gap: 15px;
+        }
+        .title img{
+            height: 100px;
+            border-radius: 50%;
+        }
+
         .container {
             max-width: 800px;
             margin: auto;
@@ -67,7 +79,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>HTML Landing Page</h1>
+        <div class="title">
+            <img src="./img/logo.png" alt="html">
+            <h1>HTML Landing Page</h1>
+        </div>
 
         <h2>Overview</h2>
         <p>Welcome to my HTML Landing Page project! This page is a simple yet effective landing page created entirely using HTML. It demonstrates the ability to create a basic web page with navigation links and a clean layout using only HTML.</p>

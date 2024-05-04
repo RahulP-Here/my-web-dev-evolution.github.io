@@ -6,26 +6,31 @@ let cards = {
         './Project-1/img/logo/logo.png',
          './Project-2/img/logo.png',
          './Project-3/img/logo.png',
+         './Project-4/img/logo.png',
         ],
     title: [
         'HTML Cheatsheet',
         'HTML Landing Page',
         'Fruit Knowledge',
+        'My Coffee',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
         'HTML Landing Page is a simple yet effective landing page created entirely using HTML.',
-        'Fruit Knowledge, This page combines HTML and CSS to showcase information about various fruits.'
+        'Fruit Knowledge, This page combines HTML and CSS to showcase information about various fruits.',
+        'A webpage introducing My!Coffee with navigation, a welcome message, and buttons for exploration and support.',
     ],
     tech: [
         ["HTML5"],
         ["HTML5"],
+        ["HTML5", "CSS3"],
         ["HTML5", "CSS3"],
     ],
     view: [
         './Project-1/details.html',
         './Project-2/readme.html',
         './Project-3/readme.html',
+        './Project-4/readme.html',
     ]
 }
 

@@ -8,7 +8,7 @@ This repository serves as a visual timeline of my coding evolution. From basic H
 
 ## Projects
 
-- **[Project 4: Design The Layout](./Project-5/)**
+- **[Project 5: Design The Layout](./Project-5/)**
 - **[Project 4: My Coffee](./Project-4/)**
 - **[Project 3: Fruit Knowledge](./Project-3/)**
 - **[Project 2: HTML Landing Page](./Project-2/)**

@@ -7,30 +7,35 @@ let cards = {
          './Project-2/img/logo.png',
          './Project-3/img/logo.png',
          './Project-4/img/logo.png',
+         './Project-5/img/logo.png',
         ],
     title: [
         'HTML Cheatsheet',
         'HTML Landing Page',
         'Fruit Knowledge',
         'My Coffee',
+        'Design The Layout',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
         'HTML Landing Page is a simple yet effective landing page created entirely using HTML.',
         'Fruit Knowledge, This page combines HTML and CSS to showcase information about various fruits.',
         'A webpage introducing My!Coffee with navigation, a welcome message, and buttons for exploration and support.',
+        'In the Layout Design Project a webpage layout created using HTML, CSS, and Bootstrap. The design is based on a Figma PNG file',
     ],
     tech: [
         ["HTML5"],
         ["HTML5"],
         ["HTML5", "CSS3"],
         ["HTML5", "CSS3"],
+        ["HTML5", "CSS3", "BOOTSTRAP"],
     ],
     view: [
         './Project-1/details.html',
         './Project-2/readme.html',
         './Project-3/readme.html',
         './Project-4/readme.html',
+        './Project-5/readme.html',
     ]
 }
 

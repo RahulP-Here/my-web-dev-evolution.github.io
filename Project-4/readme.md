@@ -34,7 +34,6 @@ Welcome to My Coffee! This project combines HTML and CSS to create a stylish web
 1. **My Coffee Landing Page**
    ![My Coffee Landing Page](./img/output/mycoffee.png)
 
-<!-- Add more screenshots for specific sections as needed -->
 
 ## How to Use
 

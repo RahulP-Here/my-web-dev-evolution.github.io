@@ -1,0 +1,237 @@
+/* HEADER */
+header{
+    justify-content: space-between ;
+    align-items: center;
+    margin: var(--m-primary);
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+header .header-left{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+header .header-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+header .header-right > span{
+    text-align: right;
+    display: flex;
+    gap: 10px;
+}
+
+header .header-right span label{
+    font-weight: bolder;
+}
+
+header .header-right span:last-child > *{
+    border-radius: 0%;
+    height: 25px !important;
+}
+
+header .header-right span:last-child button{
+    display: flex;
+    justify-content: center;
+    padding: 12px 10px;
+    align-items: center;
+}
+
+header .header-right span a{
+    color: black;
+}
+
+/* NavBar */
+nav{
+    justify-content: space-between;
+    margin: var(--m-primary);
+    border-top: 1px solid rgb(167, 166, 166);
+    border-bottom: 1px solid rgb(167, 166, 166);
+    align-items: center;
+    padding: 0.5rem 0 ;
+}
+
+.y-bar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.y-bar li:nth-child(2n+1){
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+.y-bar li:first-child{
+    color: var(--p-color);
+    padding-left: 9px;
+}
+
+nav .search-bar button{
+    width: 30px;
+    background-color: var(--p-color);
+    color: white;
+    border: unset;
+    transition: all 0.2s;
+}
+
+nav .search-bar button:hover{
+    background-color: transparent;
+    color: var(--p-color);
+    border: 1px solid var(--p-color);
+}
+
+/* Main Page */
+.main{
+    margin: var(--m-primary);
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main .left{
+    width: 24%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main .left img{
+    width: 100%;
+    height: auto;
+}
+
+.main .left h3{
+    font-family: var(--p-font);
+    margin: 0;
+}
+
+.main .left .categories ul{
+    list-style: none;
+    padding: 0;
+}
+
+.main .left .categories ul li{
+    line-height: 30px;
+    color: rgb(81, 81, 81);
+}
+
+.main .left .categories ul li:nth-child(2){
+    color: var(--p-color);
+}
+
+.main .form{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .form form{
+    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .form form input{
+    padding: 1px 5px;
+}
+
+.main .form form button{
+    width: 80px;
+}
+
+.main .form div > a, span{
+    display: block;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main .form div span:last-child{
+    color: var(--p-color);
+}
+
+.main .right{
+    width: 76%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.main .right .offer-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+.main .right .offer-card > div img{
+    width: 100%;
+    height: auto;
+}
+
+.main .right .item-card{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 810px;
+    overflow-y: auto;
+}
+
+.main .right .item-card > div{
+    border: unset;
+    display: flex !important;
+    gap: 5px;
+}
+
+.main .right .item-card > div img{
+    border: 1px solid rgba(180, 179, 179, 0.5);
+}
+
+.card-body{
+    flex: 0;
+}
+
+.main .right .item-card .card .card-body, .card-body>*{
+    margin: 0;
+    padding: 0;
+}
+
+.main .right .item-card .card .card-body:first-child{
+    display: flex;
+    border: 2px solid blue !important;
+    gap: 2px;
+}
+
+.main .right .item-card .card .card-body:last-child{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.main .right .item-card .card .card-body span:first-child{
+    color: var(--p-color);
+}
+
+.main .right .item-card .card .card-body > p, span{
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    margin: var(--m-primary);
+    border-top: 1px solid rgb(167, 166, 166);
+}
+
+footer ul{
+    margin: 10px 0 !important;
+    color: gray;
+}

@@ -8,6 +8,7 @@ This repository serves as a visual timeline of my coding evolution. From basic H
 
 ## Projects
 
+- **[Project 5: Youtube Homepage UI Design](./Project-6/)**
 - **[Project 5: Design The Layout](./Project-5/)**
 - **[Project 4: My Coffee](./Project-4/)**
 - **[Project 3: Fruit Knowledge](./Project-3/)**

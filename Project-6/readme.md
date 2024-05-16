@@ -14,7 +14,7 @@ Welcome to the YouTube Home Page Clone project! This design-only project aims to
   - [`phone.css`](phone.css)
   - [`responsive.css`](responsive.css)
 
-- **View Live:** [`The Layout.com`](https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-6/index.html)
+- **View Live:** [`Youtube.com`](https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-6/index.html)
 
 - **Description:** The YouTube Home Page Clone project recreates the visual layout of YouTube's home page using HTML and CSS. Explore the code to understand how the project achieves the layout, styling, and responsiveness to closely resemble the original YouTube website.
 

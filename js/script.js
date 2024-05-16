@@ -8,6 +8,7 @@ let cards = {
          './Project-3/img/logo.png',
          './Project-4/img/logo.png',
          './Project-5/img/logo.png',
+         './Project-6/img/logo.png',
         ],
     title: [
         'HTML Cheatsheet',
@@ -15,6 +16,7 @@ let cards = {
         'Fruit Knowledge',
         'My Coffee',
         'Design The Layout',
+        'YouTube Home Page UI Clone',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
@@ -22,6 +24,7 @@ let cards = {
         'Fruit Knowledge, This page combines HTML and CSS to showcase information about various fruits.',
         'A webpage introducing My!Coffee with navigation, a welcome message, and buttons for exploration and support.',
         'In the Layout Design Project a webpage layout created using HTML, CSS, and Bootstrap. The design is based on a Figma PNG file',
+        'Implements a layout with a header, navbar, main page content, and footer. The layout is responsive and follows a clean and modern design, leveraging the Bootstrap framework for enhanced styling and components.',
     ],
     tech: [
         ["HTML5"],
@@ -29,6 +32,7 @@ let cards = {
         ["HTML5", "CSS3"],
         ["HTML5", "CSS3"],
         ["HTML5", "CSS3", "BOOTSTRAP"],
+        ["HTML5", "CSS3"],
     ],
     view: [
         './Project-1/details.html',
@@ -36,6 +40,7 @@ let cards = {
         './Project-3/readme.html',
         './Project-4/readme.html',
         './Project-5/readme.html',
+        './Project-6/readme.html',
     ]
 }
 

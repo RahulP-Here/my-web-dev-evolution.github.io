@@ -1,0 +1,32 @@
+#top #top-left-content #navbar {
+    display:none;
+}
+
+#top #top-left-content {
+    display: inline-block;
+}
+
+#bottom #responsive-bottom-left-content{
+    display: none; 
+}
+
+#bottom #bottom-left-content{
+    display: none;
+}
+
+#bottom #bottom-main-content{
+     margin-left: 0.5rem;
+}
+
+#bottom #bottom-main-content #feilds .scroll-tag{
+    display: none;
+}
+
+#bottom #bottom-main-content::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+
+#responsive-footer {
+    display: flex;
+}

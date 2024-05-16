@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1312px) {
+    html {
+        font-size: 97%;
+    }
+}
+
+@media only screen and (max-width: 1112px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 857px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+    #top #top-center-content {
+        display: none;
+    }
+
+    #top #top-right-content #search {
+        display: inline-block;
+    }
+}
+
+
+

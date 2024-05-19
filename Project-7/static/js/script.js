@@ -10,7 +10,7 @@ function loginUser() {
 
 // Fetch the playlists from the server
 async function fetchPlaylists() {
-    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/6a6d8ef49ca6157869092a001058ea9e8a59844f/Project-7/songs/');
+    let response = await fetch('/songs/');
     
     let playlistsHTML = await response.text();
 

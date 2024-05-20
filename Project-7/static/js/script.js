@@ -10,7 +10,8 @@ function loginUser() {
 
 // Fetch the playlists from the server
 async function fetchPlaylists() {
-    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs');
+    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs', {  mode: 'no-cors'
+});
     let playlistsHTML = await response.text();
     let tempDiv = document.createElement('div');
     tempDiv.innerHTML = playlistsHTML;
@@ -26,7 +27,8 @@ async function fetchPlaylists() {
             let imgSource = `https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs${folderName}/cover.jpeg`;
             let defaultImgSource = `./static/img/album logo.png`;
 
-            let loadJson = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs${folderName}/info.json`);
+            let loadJson = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs${folderName}/info.json`  mode: 'no-co  mode: 'no-cors'  mode: 'no-cors'
+});
             let jsonContent = await loadJson.json();
 
             let albumElement = document.createElement('div');
@@ -51,7 +53,8 @@ async function fetchPlaylists() {
 }
 
 async function fetchSongs(playlistName) {
-    let response = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs${playlistName}/`);
+    let response = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs${playlistName}}  mode: 'no-cors'
+});
     let songsHTML = await response.text();
 
     let songsContainer = document.querySelector('.songslist');

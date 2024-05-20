@@ -10,7 +10,7 @@ function loginUser() {
 
 // Fetch the playlists from the server
 async function fetchPlaylists() {
-    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/main/Project-7/songs/');
+    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/');
     let playlistsHTML = await response.text();
     //console.log(playlistsHTML);
     
@@ -28,10 +28,10 @@ async function fetchPlaylists() {
         if (playlistLink.href.includes('/songs/') && (!(playlistLink.href.includes('.htaccess')))){
 
             let folderName = playlistLink.textContent;
-            let imgSource = `https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/main/Project-7/songs/${folderName}/cover.jpeg`;
+            let imgSource = `https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${folderName}/cover.jpeg`;
             let defaultImgSource = `./static/img/album logo.png`;
 
-            let loadJson = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/main/Project-7/songs/${folderName}/info.json`);
+            let loadJson = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${folderName}/info.json`);
             let jsonContent = await loadJson.json();
 
             let albumElement = document.createElement('div');
@@ -58,7 +58,7 @@ async function fetchPlaylists() {
 
 // Fetch songs for a specific playlist
 async function fetchSongs(playlistName) {
-    let response = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/main/Project-7/songs/${playlistName}/`);
+    let response = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${playlistName}/`);
     let songsHTML = await response.text();
     
     let songsContainer = document.querySelector('.songslist');
@@ -73,7 +73,7 @@ async function fetchSongs(playlistName) {
     for (let index = 0; index < songLinks.length; index++) {
         
         // if ((index > 0) && !(((songLinks[index].innerHTML).includes('-img.')))) {
-        if ((songLinks[index].href.includes(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/main/Project-7/songs/`)) && (!(songLinks[index].href.includes(`cover`)) && !(songLinks[index].href.includes(`.json`)) && (songLinks[index].href != `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs`))) {
+        if ((songLinks[index].href.includes(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/`)) && (!(songLinks[index].href.includes(`cover`)) && !(songLinks[index].href.includes(`.json`)) && (songLinks[index].href != `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs`))) {
             let songName = songLinks[index].textContent;
             let songPath = songLinks[index].getAttribute('href');
 

@@ -10,12 +10,8 @@ function loginUser() {
 
 // Fetch the playlists from the server
 async function fetchPlaylists() {
-    let response = await fetch('https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/');
+    let response = await fetch('https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/');
     let playlistsHTML = await response.text();
-    //console.log(playlistsHTML);
-    
-
-
     let tempDiv = document.createElement('div');
     tempDiv.innerHTML = playlistsHTML;
 
@@ -25,13 +21,12 @@ async function fetchPlaylists() {
     for (let i = 0; i < playlistLinksArray.length; i++) {
         let playlistLink = playlistLinksArray[i];
 
-        if (playlistLink.href.includes('/songs/') && (!(playlistLink.href.includes('.htaccess')))){
-
+        if (playlistLink.href.includes('/songs/') && (!(playlistLink.href.includes('.htaccess')))) {
             let folderName = playlistLink.textContent;
-            let imgSource = `https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${folderName}/cover.jpeg`;
+            let imgSource = `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/${folderName}/cover.jpeg`;
             let defaultImgSource = `./static/img/album logo.png`;
 
-            let loadJson = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${folderName}/info.json`);
+            let loadJson = await fetch(`https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/${folderName}/info.json`);
             let jsonContent = await loadJson.json();
 
             let albumElement = document.createElement('div');
@@ -53,14 +48,12 @@ async function fetchPlaylists() {
             albumContainer.appendChild(albumElement);
         }
     }
-
 }
 
-// Fetch songs for a specific playlist
 async function fetchSongs(playlistName) {
-    let response = await fetch(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/${playlistName}/`);
+    let response = await fetch(`https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/${playlistName}/`);
     let songsHTML = await response.text();
-    
+
     let songsContainer = document.querySelector('.songslist');
     songsContainer.innerHTML = "";
 
@@ -69,11 +62,10 @@ async function fetchSongs(playlistName) {
 
     let songLinks = Array.from(tempDiv.getElementsByTagName('a'));
 
-
     for (let index = 0; index < songLinks.length; index++) {
-        
-        // if ((index > 0) && !(((songLinks[index].innerHTML).includes('-img.')))) {
-        if ((songLinks[index].href.includes(`https://github.com/RahulP-Here/my-web-dev-evolution.github.io/tree/c4338826a6c1db00887ef167cbc245798b83f9d4/Project-7/songs/`)) && (!(songLinks[index].href.includes(`cover`)) && !(songLinks[index].href.includes(`.json`)) && (songLinks[index].href != `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs`))) {
+        if (songLinks[index].href.includes(`https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/`) && 
+            (!(songLinks[index].href.includes(`cover`)) && !(songLinks[index].href.includes(`.json`)) && 
+            (songLinks[index].href != `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs`))) {
             let songName = songLinks[index].textContent;
             let songPath = songLinks[index].getAttribute('href');
 
@@ -83,7 +75,7 @@ async function fetchSongs(playlistName) {
             songElement.classList.add('pointer');
             songElement.setAttribute('data-path', songPath);
             songElement.innerHTML = `
-                <img src="./static/img/album logo.png" onerror = "this.onerror = null; this.src = './static/img/album logo.png'" alt="song">
+                <img src="./static/img/album logo.png" onerror="this.onerror=null; this.src='./static/img/album logo.png'" alt="song">
                 <div class="song-detail">
                     <span>${songName}</span>
                     <span>Unknown</span>
@@ -96,7 +88,6 @@ async function fetchSongs(playlistName) {
     }
 
     await playSong(songsContainer.children[0]);
-
 }
 
 // Find duration of a song

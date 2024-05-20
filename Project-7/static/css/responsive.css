@@ -105,6 +105,7 @@
         padding: 8px 10px;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     .curr-song .first-part {
@@ -117,9 +118,22 @@
         flex-grow: unset;
     }
 
-    .curr-song .second-part .song-seekbar {
+    .curr-song .second-part .song-seekbar > span{
         display: none;
     }
+
+    .curr-song .second-part .seekbar {
+            position: absolute;
+            bottom: 2px;
+            right: 0;
+            height: 5px;
+            width: 100%;
+    }
+
+    .curr-song .second-part .seekbar .circle{
+        display: none;
+    }
+
 
     .curr-song .third-part {
         display: none;

@@ -11,22 +11,33 @@ function loginUser() {
 // Fetch the playlists from the server
 async function fetchPlaylists() {
     let response = await fetch('/songs/');
-    
     let playlistsHTML = await response.text();
+    //console.log(playlistsHTML);
+    
+
 
     let tempDiv = document.createElement('div');
     tempDiv.innerHTML = playlistsHTML;
 
     let playlistLinks = tempDiv.getElementsByTagName('a');
-    Array.from(playlistLinks).forEach((playlistLink) => {
-        if (playlistLink.href.includes('/songs/')) {
-            let albumName = playlistLink.innerHTML.slice(0, playlistLink.innerHTML.length - 1);
-            let imgSource = `./songs/${albumName}/${albumName}-img.jpeg`;
+    let playlistLinksArray = Array.from(playlistLinks);
+
+    for (let i = 0; i < playlistLinksArray.length; i++) {
+        let playlistLink = playlistLinksArray[i];
+
+        if (playlistLink.href.includes('/songs/') && (!(playlistLink.href.includes('.htaccess')))){
+
+            let folderName = playlistLink.textContent;
+            let imgSource = `/songs/${folderName}/cover.jpeg`;
             let defaultImgSource = `./static/img/album logo.png`;
+
+            let loadJson = await fetch(`/songs/${folderName}/info.json`);
+            let jsonContent = await loadJson.json();
 
             let albumElement = document.createElement('div');
             albumElement.classList.add('album');
             albumElement.classList.add('pointer');
+            albumElement.setAttribute('data-folderName', folderName);
             albumElement.innerHTML = `
                 <div class="image">
                     <span class="popup-hover">
@@ -34,21 +45,22 @@ async function fetchPlaylists() {
                     </span>
                     <img src="${imgSource}" onerror="this.onerror=null; this.src='${defaultImgSource}';">
                 </div>
-                <h3>${albumName}</h3>
-                <p>This is Album No. 1</p>
+                <h3>${jsonContent.title}</h3>
+                <p>${jsonContent.desc}</p>
             `;
 
             let albumContainer = document.querySelector('.album-container');
             albumContainer.appendChild(albumElement);
         }
-    });
+    }
+
 }
 
 // Fetch songs for a specific playlist
 async function fetchSongs(playlistName) {
-    let response = await fetch(`./songs/${playlistName}/`);
+    let response = await fetch(`/songs/${playlistName}/`);
     let songsHTML = await response.text();
-
+    
     let songsContainer = document.querySelector('.songslist');
     songsContainer.innerHTML = "";
 
@@ -56,14 +68,15 @@ async function fetchSongs(playlistName) {
     tempDiv.innerHTML = songsHTML;
 
     let songLinks = Array.from(tempDiv.getElementsByTagName('a'));
-    
-    
+
+
     for (let index = 0; index < songLinks.length; index++) {
-        if ((songLinks[index].href.includes(`/songs/`)) && !(songLinks[index].href.includes(`-img.`))) {
-            let songName = (songLinks[index].innerHTML).split('.m')[0];
+        
+        // if ((index > 0) && !(((songLinks[index].innerHTML).includes('-img.')))) {
+        if ((songLinks[index].href.includes(`/songs/`)) && (!(songLinks[index].href.includes(`cover`)) && !(songLinks[index].href.includes(`.json`)) && (songLinks[index].href != `https://rahulp-here.github.io/my-web-dev-evolution.github.io/Project-7/songs/`))) {
+            let songName = songLinks[index].textContent;
             let songPath = songLinks[index].getAttribute('href');
-            // console.log(songLinks[index]);
-            
+
             let duration = await findSongDuration(songPath);
 
             let songElement = document.createElement('div');
@@ -192,6 +205,8 @@ async function playSong(song) {
     await playBtnVisibility();
     if (!initilizeEvents) {
         await intilizeSlideEvents();
+    } else {
+        await slideVolume();
     }
 }
 
@@ -230,6 +245,13 @@ async function playPause() {
             wave.play();
             currentSongElement.querySelector('.play > img').setAttribute('src', './static/svg/pause.svg');
         }
+        // If Song Ends
+        else if (currentSong.ended) {
+            currentSongElement.querySelector('.play > img').setAttribute('src', './static/svg/play.svg');
+            wave.pause();
+            await preNxt('nxt');
+
+        }
         // If Song is in Pause State
         else {
             wave.pause();
@@ -266,10 +288,12 @@ async function main() {
 
     // FOR EACH ALBUM
     let albums = document.getElementsByClassName('album');
+    
     Array.from(albums).forEach((album) => {
         // Add Click event on each playlist
         album.addEventListener('click', async () => {
-            playlistName = Array.from(album.children)[1].innerHTML;
+
+            playlistName = album.getAttribute('data-folderName');
 
             // If Song Already Playing And user Trying To Switch Playlist
             if (currentSong !== null) {
@@ -278,11 +302,13 @@ async function main() {
                 currentSong.pause();
             }
             // Fetch Songs from Clicked Playlist
+            
             await fetchSongs(playlistName);
-
+            
 
             // FOR EACH SONG
             let songs = document.querySelectorAll('.songslist > .pointer');
+            
             Array.from(songs).forEach((song) => {
                 // Add Click event on each song
                 song.addEventListener('click', async () => {
@@ -292,6 +318,7 @@ async function main() {
             })
         })
     })
+
 
 
     // CHANGE STATE OF SONG : PLAY/PAUSE 
@@ -388,16 +415,20 @@ async function slideVolume() {
     let runningbar = volumeElement.querySelector('.seekbar .complete-bar');
     let newWidth;
 
-    if (!initilizeEvents) {
-        let computedStyle = window.getComputedStyle(runningbar); // Get the computed style
-        let width = computedStyle.getPropertyValue('width'); // Get the width property
-        newWidth = parseFloat(width.replace('px', '')); // Parse the width value as float
+    if (!volumeBarInteraction) {
+        if (window.innerWidth < 729) {
+            currentSong.volume = 1;
+        } else {
+            currentSong.volume = 0.6;
+        }
+        runningbar.style.width = `${(currentSong.volume) * 100}%`;
+        // console.log(currentSong.volume);
     }
     else {
         newWidth = parseFloat((runningbar.style.width).replace('%', ''));
+        currentSong.volume = (newWidth) / 100;
     }
 
-    currentSong.volume = (newWidth) / 100;
 
     if (currentSong.volume == 0) {
         volumeElement.querySelector('img').src = "./static/svg/volume-off.svg"
@@ -467,6 +498,7 @@ async function intilizeSlideEvents() {
                 }
                 else {
                     slideVolume();
+                    volumeBarInteraction = true;
                 }
             }
         }
@@ -479,6 +511,7 @@ async function intilizeSlideEvents() {
 async function load() {
     document.addEventListener('DOMContentLoaded', async () => {
         wave = document.querySelector('video');
+        loginUser();
         await main();
     })
 }
@@ -490,5 +523,6 @@ let currentSong = null;
 let runningSongTime = 0;
 let play;
 let initilizeEvents = false;
+let volumeBarInteraction = false;
 
 load();

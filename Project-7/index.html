@@ -7,7 +7,7 @@
     <title>Spotify - Web Player: Music for everyone</title>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./static/svg/spotify-favico.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/svg/favicon.svg" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./static/css/utility.css">
@@ -234,11 +234,20 @@
 </body>
 <script src="./static/js/responsive.js"></script>
 <script src="./static/js/script.js"></script>
-<!-- <script src="./static/js/volume.js"></script> -->
 <script>
-    // let v = document.getElementById('myVideo');
-    // console.log(v);
-    // v.play();
+    function setAppHeight() {
+            const app = document.querySelector('.main');
+            const vh = window.innerHeight * 0.01;
+            app.style.height = `${(vh * 100) - 85}px`;
+        }
+
+        // Set the initial height
+        setAppHeight();
+
+        // Update the height on resize
+        window.addEventListener('resize', setAppHeight);
+        // Optional: Update the height on orientation change
+        window.addEventListener('orientationchange', setAppHeight);
 
 </script>
 

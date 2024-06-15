@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+#main {
+    border: 5px solid white;
+    position: relative;
+    max-width: 24rem;
+    min-width: 10rem;
+    border-radius: 45px;
+    overflow: hidden;
+    aspect-ratio: 0.55;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: black;
+}
+
+#display {
+    height: 34%;
+    min-height: 100px;
+    border-radius: 45px 45px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    overflow: hidden;
+    font-size: 3rem;
+    color: white;
+}
+
+.ans {
+    overflow-y: auto;
+    max-width: 100%;
+}
+
+/* WebKit Scrollbar Styling */
+.ans::-webkit-scrollbar {
+    height: 0px;
+}
+
+.ans::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background of the track */
+}
+
+.ans::-webkit-scrollbar-thumb {
+    background: transparent;
+
+}
+
+
+.error {
+    display: none;
+    color: #a5a5a5;
+    width: 100%;
+    max-height: 0%;
+    transition: all 0.2s;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+#buttons {
+    height: 66%;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.button {
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+#zero {
+    aspect-ratio: unset;
+    flex: 2;
+    border-radius: 50px;
+}
+
+.yellow {
+    background-color: #ff9f0a;
+    color: white;
+}
+
+.light-grey {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.grey {
+    background-color: #333333;
+    color: white;
+}
+
+.design {
+    height: 15px;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}

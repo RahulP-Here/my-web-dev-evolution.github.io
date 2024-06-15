@@ -1,14 +1,14 @@
-
+/* Global reset and basic styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
+    user-select: none; /* Disable text selection */
+    outline: none; /* Remove outline on focus */
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
 }
 
-
+/* Main container styling */
 #main {
     border: 5px solid white;
     position: relative;
@@ -25,6 +25,7 @@
     background-color: black;
 }
 
+/* Display area styling */
 #display {
     height: 34%;
     min-height: 100px;
@@ -39,44 +40,44 @@
 }
 
 .ans {
-    overflow-y: auto;
-    max-width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-width: 100%; /* Ensure content doesn't overflow */
 }
 
 /* WebKit Scrollbar Styling */
 .ans::-webkit-scrollbar {
-    height: 0px;
+    height: 0px; /* Hide scrollbar */
 }
 
 .ans::-webkit-scrollbar-track {
-    background: transparent;
-    /* Background of the track */
+    background: transparent; /* Background of the track */
 }
 
 .ans::-webkit-scrollbar-thumb {
-    background: transparent;
-
+    background: transparent; /* Scrollbar thumb color */
 }
 
-
+/* Error message styling */
 .error {
-    display: none;
+    display: none; /* Initially hidden */
     color: #a5a5a5;
     width: 100%;
     max-height: 0%;
-    transition: all 0.2s;
+    transition: all 0.2s; /* Smooth transition animation */
     text-align: right;
     font-size: 1.5rem;
 }
 
+/* Buttons container styling */
 #buttons {
     height: 66%;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflow */
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
 
+/* Button row styling */
 .row {
     flex: 1;
     gap: 20px;
@@ -84,6 +85,7 @@
     display: flex;
 }
 
+/* Generic button styling */
 .button {
     flex: 1;
     font-size: 2rem;
@@ -94,14 +96,21 @@
     border: none;
 }
 
+/* Special styling for zero button */
 #zero {
-    aspect-ratio: unset;
+    aspect-ratio: unset; /* Reset aspect ratio */
     flex: 2;
     border-radius: 50px;
 }
 
+/* Specific button color styles */
 .yellow {
     background-color: #ff9f0a;
+    color: white;
+}
+
+.yellow:hover {
+    background-color: rgba(255, 159, 10, 0.8);
     color: white;
 }
 
@@ -110,11 +119,22 @@
     color: black;
 }
 
+.light-grey:hover {
+    background-color: rgba(165, 165, 165, 0.8);
+    color: black;
+}
+
 .grey {
     background-color: #333333;
     color: white;
 }
 
+.grey:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+}
+
+/* Design element styling */
 .design {
     height: 15px;
     width: 40%;

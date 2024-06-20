@@ -11,7 +11,7 @@ let cards = {
          './Project-6/img/logo.png',
          './Project-7/assets/logo.jpg',
          './Project-8/assets/calculator.svg',
-         './Project-9/static/logo.svg',
+         './Project-9/static/logo.png',
         ],
     title: [
         'HTML Cheatsheet',

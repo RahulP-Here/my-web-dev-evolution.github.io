@@ -98,8 +98,9 @@ const fectchNote = () => {
     for (let index = 0; index < localStorage.length; index++) {
         let key = localStorage.key(index);
         let content = JSON.parse(localStorage.getItem(key));
-
-        // Create note card element
+        
+        let note = (content.n).replaceAll('\n', '<br>'); //replace new line with <br> tag
+       
         let div = document.createElement('div');
         div.classList.add('card');
         div.classList.add('text-bg-dark');
@@ -113,7 +114,7 @@ const fectchNote = () => {
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
-                <p>${content.n}</p>
+                <p>${note}</p>
                 <footer class="blockquote-footer">${content.l}</footer>
               </blockquote>
             </div>`;

@@ -8,6 +8,7 @@ This repository serves as a visual timeline of my coding evolution. From basic H
 
 ## Projects
 
+- **[Project 9: Notebook App](./Project-9/)**
 - **[Project 8: My! Calc](./Project-8/)**
 - **[Project 7: Hacker's Terminal](./Project-7/)**
 - **[Project 6: Youtube Homepage UI Design](./Project-6/)**

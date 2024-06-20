@@ -11,6 +11,7 @@ let cards = {
          './Project-6/img/logo.png',
          './Project-7/assets/logo.jpg',
          './Project-8/assets/calculator.svg',
+         './Project-9/static/logo.svg',
         ],
     title: [
         'HTML Cheatsheet',
@@ -21,6 +22,7 @@ let cards = {
         'YouTube Home Page UI Clone',
         'Hacker\'s Terminal',
         'My! Calc',
+        'Notebook App',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
@@ -31,6 +33,7 @@ let cards = {
         'Implements a layout with a header, navbar, main page content, and footer. The layout is responsive and follows a clean and modern design, leveraging the Bootstrap framework for enhanced styling and components.',
         'A simulation of a hacker terminal interface featuring glitch effects, dynamic text animations, and a staged hacking process.',
         'A fully functional calculator with basic arithmetic operations, error handling, and interactive button design.',
+        'Notebook App is designed to offer a simple yet efficient way to manage notes. It uses local storage for data persistence and provides a user-friendly interface for interacting with notes.',
     ],
     tech: [
         ["HTML5"],
@@ -41,6 +44,7 @@ let cards = {
         ["HTML5", "CSS3"],
         ["HTML5", "CSS3", "JS"],
         ["HTML5", "CSS3", "JS"],
+        ["HTML5", "CSS3", "JS", "BOOTSTRAP"],
     ],
     view: [
         './Project-1/details.html',
@@ -51,6 +55,7 @@ let cards = {
         './Project-6/readme.html',
         './Project-7/readme.html',
         './Project-8/readme.html',
+        './Project-9/readme.html',
     ]
 }
 

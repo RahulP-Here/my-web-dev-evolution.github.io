@@ -1,0 +1,350 @@
+body{
+    background-color: black;
+    font-family: "Martel Sans", sans-serif;
+}
+
+/* HOME */
+.home{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), rgba(0, 0, 0, 0.4);
+    max-height: 45rem;
+    height: 160vh;
+    overflow: hidden;
+    position: relative;
+    /* border-bottom: 10px solid var(--s-color); */
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transform: scale(1.27);
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 75%;
+    max-width: 103rem;
+    height: 6rem;
+    margin: 0 auto;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .logo img{
+    width: 9.25rem;
+    /* height: 2.5rem; */
+}
+
+.nav .menu{
+    display: flex;
+    gap: 30px;
+}
+
+.dropdown{
+    position: relative;
+    max-width: 130px;
+    display: flex;
+    padding: 7px 14px;
+    border: 1.5px solid var(--t-color);
+    border-radius: 3px;
+}
+
+.dropdown img{
+    position: absolute;
+    height: 50%;
+}
+
+.dropdown select{
+    background: transparent;
+    z-index: 1;
+    width: 100%;
+    outline: none;
+    border: 1px solid red;
+    color: white;
+    font-size: 15px;
+    padding-left: 25px;
+    border: none;
+}
+
+.nav .menu button{
+    background: var(--p-color);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 3px;
+}
+
+.nav .menu button:hover{
+    background: var(--ph-color);
+}
+
+.main{
+    color: white;
+    text-align: center;
+    height: 80%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .intro { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main .intro h1{ 
+    font-size: 3.3rem;
+    letter-spacing: -4px;
+}
+
+.main .intro p{ 
+    font-size: 1.45rem;
+}
+
+.main .input{ 
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main .input > div{ 
+    position: relative;
+    display: inline-block;
+    width: 23rem;
+}
+.main .input div > span{ 
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    color: #B3B1B3;
+}
+
+.main .input input{ 
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    width: 100%;
+    padding: 7px 6%;
+    color: white;
+    border: 1.5px solid var(--t-color);
+    border-radius: 3px;
+}
+
+.main .input button{ 
+    height: 100%;
+    background: var(--p-color);
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+    border: none;
+    padding: 7px 24px;
+    border-radius: 3px;
+}
+
+.main .input button:hover{ 
+    background: var(--ph-color);
+}
+
+
+/* -------------------------------- */
+/* SECTION - 1: common from utility.css */
+
+
+/* -------------------------------- */
+/* SECTION - 2*/
+
+.section-2 .section-media .box {
+    width: 58%;
+    height: 24%;
+    min-width: 245px;
+    min-height: 65px;
+    aspect-ratio: initial;
+    top: 70%;
+    left: 50%;
+    z-index: 10;
+    border: 2px solid var(--t-color);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: black;
+    transform: translate(-50%, -10%);
+}
+
+.section-2 .section-media .box > div{
+    position: static;
+}
+
+.section-2 .section-media .box .txt-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.section-2 .section-media .box .txt-2 h3 {
+    font-size: 17px;
+}
+
+.section-2 .section-media .box .txt-2 span{
+    font-size: 14px;
+    color: #0071EB;
+}
+
+.section-2 .section-media .box .animation {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.section-2 .section-media .box .animation img {
+    width: 100%;
+}
+
+
+/* -------------------------------- */
+/* SECTION - 3*/
+
+.section-3 .section-media > div {
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    width: 64%;
+    height: 49%;
+    z-index: -1;
+    aspect-ratio: initial;
+    overflow: hidden;
+}
+
+.section-3 .section-media div > video {
+    object-fit: cover;
+    width: initial;
+    height: 100%;
+}
+
+
+/* -------------------------------- */
+/* SECTION - 5*/
+
+.section-5{
+    display: block;
+    overflow: hidden;
+}
+
+.section-5 h1{
+    text-align: center;
+}
+
+.section-5 > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-5 .Questions{
+    margin: 2rem 0;
+}
+
+.section-5 .Questions .q{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80%;
+    margin: 5px auto;
+    cursor: pointer;
+    /* margin: auto; */
+    
+}
+
+.section-5 .Questions .q > div{
+    background-color: var(--f-color);
+}
+
+.section-5 .Questions .q .show{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    user-select: none;
+}
+
+.section-5 .Questions .q .show:hover{
+    background-color: var(--f-color-light);
+}
+
+.section-5 .Questions .q .show > p:nth-child(1){
+    font-size:1.45em;
+}
+
+.section-5 .Questions .q .show > p:nth-child(2){
+    font-size:4em;
+    font-weight: lighter;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    /* transform: rotate(45deg); */
+}
+
+.section-5 .Questions .q .hide{
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    max-height: 0px;
+    overflow: hidden;
+    display: flex;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-5 .Questions .q .hide > p{
+    text-align: justify;
+    font-size:1.45em;
+}
+
+.section-5 .main{
+   padding: 1rem;
+}
+
+
+/* -------------------------------- */
+/* FOOTER */
+.footer{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer *{
+    color: var(--footer-color);
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer > *{
+    width: 80%;
+}
+
+.footer .Links ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 5px;
+}
+
+
+
+
+
+

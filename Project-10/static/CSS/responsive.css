@@ -1,0 +1,251 @@
+
+@media only screen and (max-width: 1280px) {
+    /* HOME */
+    .nav{
+        width: 95%;
+    }
+
+    /* UTILITY*/
+    section{
+        padding: 3rem 2rem;
+    }
+    section > div{
+        width: 50%;
+    }
+    section .section-media div {
+        width: 36vw;
+    }
+    
+    /* SECTION-3*/
+        .section-3 .section-media > div {
+        top: 2vw;
+        left: 9vw;
+        width: 29vw;
+        height: 19vw;
+    }
+    
+    /* SECTION-5*/
+    .section-5 .Questions > div{
+        width: 100%;
+    }
+
+    .section-5{
+        padding: 3rem 0rem !important;
+    }
+
+    /* FOOTER */
+    .footer > *{
+        width: 98%;
+    }  
+}
+
+@media only screen and (max-width: 960px) {
+    /* HOME */
+    .home{
+        max-height: 32rem;
+    }
+
+    .nav{
+        height: 4rem;
+    }
+
+
+    .nav .logo img{
+        width: 6rem;
+    }
+
+    .nav .menu{
+        gap: 10px;
+    }
+
+
+    .main .intro h1{ 
+        font-size: 2.1rem;
+        letter-spacing: -1px;
+        line-height: 40px;
+    }
+
+    .main .intro p{ 
+        font-size: 1rem;
+    }
+
+    /* UTILITY */
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    
+    section .section-txt{
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    
+    section .section-txt p{
+        font-size: 1.1rem;
+    }
+    
+    section .section-media{
+        width: 36.5rem;
+    }
+    
+    section .section-media div{
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        z-index: -1;
+    }
+    section .section-media div {
+        width: 73%;
+    }
+
+    /* SECTION-1 : same as UTILITY*/
+
+    /* SECTION-2*/
+
+    /* SECTION-3*/
+    .section-3 .section-media > div {
+        top: 4%;
+        left: 18%;
+        width: 62%;
+        height: 52%;
+    }
+
+    /* SECTION-5*/
+    .section-5 h1{
+        font-size: 2rem;
+    }
+
+    .section-5 .Questions .q{
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer{
+        flex-direction: column !important;
+    }
+    .footer .Links ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* HOME */
+    .nav .menu .dropdown{
+        border: 1.5px solid red;
+        width: 65px;
+    }
+
+    .nav .menu .dropdown select{
+        width: 100%;
+    }
+    
+    .main{ 
+        height: 100%;
+        padding: 20px;
+    }
+    
+    .main .input{ 
+        flex-direction: column;
+        height: initial;
+        align-items: center;
+    }
+
+    .main .input > div{ 
+        width: 90%;
+        height: 3.5rem;
+        border: 1px solid red;
+    }
+    
+    .main .input input{ 
+        height: 100%;
+    }
+    
+    .main .input button{ 
+        height: 50px;
+        padding: 0px 12px;
+        font-size: 20px;
+
+    }
+
+    /* UTILITY */
+    section .section-media{
+        width: 97vw;
+    }
+    
+    section .section-media div{
+        position: absolute;
+        top: 15vw;
+        left: 13vw;
+        z-index: -1;
+        width: 72vw;
+        aspect-ratio: 16 / 9;
+    }
+    
+    section .section-media div video{
+        width: 100%;
+    }
+
+    /* SECTION-1 : same as UTILITY*/
+
+    /* SECTION-2 */
+    .section-2 .section-media .box .txt-2 h3 {
+        font-size: 16px;
+    }
+    
+    .section-2 .section-media .box .txt-2 span{
+        font-size: 13px;
+    }
+
+    .section-2 .section-media .box {
+        top: initial;
+        bottom: 10px;
+    }
+
+    /* SECTION-5 */
+    .section-5 .Questions .q .hide > p{
+        text-align: left;
+    }
+
+    /* FOOTER */
+    .footer * {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 343px) {
+    /* HOME */
+    .home{
+        max-height: initial;
+        height: initial;
+    }
+    
+    .nav{
+        flex-direction: column;
+        height: initial;
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    
+    /* UTILITY */
+    section .section-txt h1{
+        font-size: 31px;
+    }
+    
+    section .section-txt p{
+        font-size: 19px;
+    }
+
+    /* SECTION-1 : same as UTILITY*/
+
+    
+}

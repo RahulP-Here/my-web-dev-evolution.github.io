@@ -13,6 +13,7 @@ let cards = {
          './Project-8/assets/calculator.svg',
          './Project-9/static/logo.png',
          './Project-10/static/logo.png',
+         './Project-11/static/svg/favicon.svg',
         ],
     title: [
         'HTML Cheatsheet',
@@ -25,6 +26,7 @@ let cards = {
         'My! Calc',
         'Notebook App',
         'Netflix UI Clone',
+        'Spotify Clone',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',
@@ -37,6 +39,7 @@ let cards = {
         'A fully functional calculator with basic arithmetic operations, error handling, and interactive button design.',
         'Notebook App is designed to offer a simple yet efficient way to manage notes. It uses local storage for data persistence and provides a user-friendly interface for interacting with notes.',
         'Netflix UI Clone is designed to replicate the user interface of Netflix, focusing on the FAQ section. It dynamically inserts questions and answers and handles click events to show or hide the answers.',
+        'Implements a music streaming service with features like user login, playlist browsing, song playback, and volume control. The design is responsive and user-friendly, providing an engaging experience similar to Spotify.',
     ],
     tech: [
         ["HTML5"],
@@ -49,6 +52,7 @@ let cards = {
         ["HTML5", "CSS3", "JS"],
         ["HTML5", "CSS3", "JS", "BOOTSTRAP"],
         ["HTML5", "CSS3", "JS"],
+        ["HTML5", "CSS3", "JS", 'POSTMAN'],
     ],
     view: [
         './Project-1/details.html',
@@ -61,6 +65,7 @@ let cards = {
         './Project-8/readme.html',
         './Project-9/readme.html',
         './Project-10/readme.html',
+        './Project-11/readme.html',
     ]
 }
 

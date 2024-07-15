@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./static/svg/favicon.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/utility.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/responsive.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class=" font">
+    <div class="flex main">
+        <!-- Left Section -->
+        <section class="left">
+            <div class="left-top bg-12">
+                <div>
+                    <a href="/"><img class="pointer" src="./static/svg/logo.svg"></a>
+                    <img class="phn-ico pointer opacity-hover" src="./static/svg/close.svg">
+                </div>
+                <div class="nav-item">
+                    <div class="home pointer">
+                        <img src="./static/svg/home.svg">
+                        <span>Home</span>
+                    </div>
+                    <div class="search pointer">
+                        <img src="./static/svg/search.svg">
+                        <span>Search</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-bottom bg-12">
+                <div class="songs nav-item">
+                    <div class="my-songs pointer">
+                        <img src="./static/svg/library.svg">
+                        <span>My Songs</span>
+                    </div>
+                    <div>
+                        <div class="search pointer">
+                            <img src="./static/svg/search.svg">
+                        </div>
+                        <div class="add pointer" title="Create Playlist Or Folder">
+                            <img src="./static/svg/plus.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songslist">
+                    <!-- <div class="pointer">
+                        <img src="./static/img/album logo33.png"  onerror="this.onerror = null; this.src = './static/img/album logo.png'" alt="song">
+                        <div class="song-detail">
+                            <span>Song Name</span>
+                            <span>Artist Name</span>
+                        </div>
+                        <span class="duration">00 : 00</span>
+                    </div> -->
+                    <div class="temp">
+                        <h3 style="text-align: left;">It's Easy To Load Songs.</h3>
+                        <span>Click On Playlist.</span>
+                    </div>
+                </div>
+
+                <div class="left-footer">
+                    <a class="footer-a" href="https://www.spotify.com/in-en/legal/" target="_blank">Legal</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/safetyandprivacy/" target="_blank">Safety & Privacy Center</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank">Privacy Policy</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">Cookies</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank">About Ads</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/accessibility/" target="_blank">Accessibility</a>
+                    <a class="footer-a" href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">Cookies</a>
+                </div>
+
+                <div class="language">
+                    <span class="pointer">
+                        <img src="./static/svg/world.svg">
+                        <span>English</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Section -->
+        <section class="right bg-12">
+            <div class="right-top">
+                <div>
+                    <img class="pointer opacity-hover phn-ico" src="./static/svg/menu.svg">
+                    <div class="wave pointer">
+                        <video id="myVideo" loop>
+                            <source src="./static/videos/wave.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+                <div>
+                    <span id="hey">
+                        Login
+                    </span>
+                </div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="main">
+                    <h1>My Albums</h1>
+                    <div class="album-container">
+                        <!-- <div class="album pointer">
+                            <div class="image">
+                                <span class="popup-hover">
+                                    <img src="./static/svg/play.svg" alt="">
+                                </span>
+                                <img src="./static/img/album logo.png">
+                            </div>
+                            <h3>Album Name</h3>
+                            <p>This is Album No. 1</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="right-footer">
+                    <div class="footer-1">
+                        <div class="txt-links">
+                            <div id="company">
+                                    <p>Company</p>
+                                    <a class="footer-a" href="https://www.spotify.com/in-en/about-us/contact/">About</a>
+                                    <a class="footer-a" href="https://www.lifeatspotify.com/">Jobs</a>
+                                    <a class="footer-a" href="https://newsroom.spotify.com/">For the Record</a>
+                            </div>
+                            <div id="communities">
+                                    <p>Communities</p>
+                                    <a class="footer-a" href="https://artists.spotify.com/">For Artists</a>
+                                    <a class="footer-a" href="https://developer.spotify.com/">Developers</a>
+                                    <a class="footer-a" href="https://ads.spotify.com/">Advertising</a>
+                                    <a class="footer-a" href="https://investors.spotify.com/">Investors</a>
+                                    <a class="footer-a" href="https://spotifyforvendors.com/">Vendors</a>
+                            </div>
+                            <div id="useful-links">
+                                    <p>Useful links</p>
+                                    <a class="footer-a" href="https://support.spotify.com/">Support</a>
+                                    <a class="footer-a" href="https://www.spotify.com/in-en/free/">Free Mobile App</a>
+                            </div>
+                            <div id="spotify-plans">
+                                    <p>Spotify Plans</p>
+                                    <a class="footer-a"
+                                        href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual">Premium
+                                        Individual</a>
+                                    <a class="footer-a" href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo">Premium
+                                        Duo</a>
+                                    <a class="footer-a"
+                                        href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family">Premium
+                                        Family</a>
+                                    <a class="footer-a"
+                                        href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student">Premium
+                                        Student</a>
+                                    <a class="footer-a" href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free">Spotify
+                                        Free</a>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <div id="instagram" class="pointer">
+                                <img src="./static/svg/instagram.svg" alt="">
+                            </div>
+                            <div id="twitter" class="pointer">
+                                <img src="./static/svg/twitter.svg" alt="">
+                            </div>
+                            <div id="facebook" class="pointer">
+                                <img src="./static/svg/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        &copy; 2024 Spotify AB
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Current Song -->
+    <div class="curr-song">
+            <div class="first-part">
+                <img class="pointer" src="./static/img/album logo.png" alt="song">
+                <div class="song-detail">
+                    <span class="pointer">Song Name</span>
+                    <span class="opacity-hover">Artist Name</span>
+                </div>
+            </div>
+            <div class="second-part">
+                <div class="controls">
+                    <span class="pre opacity-hover pop-up">
+                        <img src="./static/svg/previous.svg" alt="pre">
+                    </span>
+                    <span class="play pointer">
+                        <img src="./static/svg/play.svg" alt="nxt">
+                    </span>
+                    <span class="nxt opacity-hover pop-up">
+                        <img src="./static/svg/next.svg" alt="nxt">
+                    </span>
+                </div>
+                <div class="song-seekbar">
+                    <span class="start">00:00</span>
+                    <div class="seekbar pointer">
+                        <div class="complete-bar">
+                            <div class="circle pointer"></div>
+                        </div>
+                    </div>
+                    <span class="duration">00:00</span>
+                </div>
+            </div>
+
+            <div class="third-part">
+                <div class="volume-bar">
+                    <img class="opacity-hover" src="./static/svg/volume-1.svg" alt="volume" class="icon">
+                    <div class="seekbar pointer">
+                        <!-- <input type="range" name="range" id="range"> -->
+                        <div class="complete-bar">
+                            <div class="circle pointer"></div>
+                        </div>
+                    </div>
+                </div>
+                <img class="opacity-hover" src="./static/svg/caret-up.svg" alt="caret-up" class="caret">
+            </div>
+    </div>
+</body>
+<script src="./static/js/responsive.js"></script>
+<script src="./static/js/script.js"></script>
+<script>
+    function setAppHeight() {
+            const app = document.querySelector('.main');
+            const vh = window.innerHeight * 0.01;
+            app.style.height = `${(vh * 100) - 85}px`;
+        }
+
+        // Set the initial height
+        setAppHeight();
+
+        // Update the height on resize
+        window.addEventListener('resize', setAppHeight);
+        // Optional: Update the height on orientation change
+        window.addEventListener('orientationchange', setAppHeight);
+
+</script>
+
+</html>

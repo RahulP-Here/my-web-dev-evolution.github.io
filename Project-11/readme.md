@@ -123,8 +123,7 @@ While uploading files to the server, a few changes were made to ensure the corre
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/your-username/spotify-clone.git`
-
+1. Clone the repository: `git clone https://github.com/RahulP-Here/my-web-dev-evolution.git`
 2. Navigate to the project directory: `cd spotify-clone`
 
 3. Open [`index.html`](index.html) in a web browser to explore the Spotify Clone.

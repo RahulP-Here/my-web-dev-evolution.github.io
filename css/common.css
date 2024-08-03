@@ -52,6 +52,18 @@ ul li a:hover {
     text-decoration: underline;
 }
 
+/* Output screenshots styling */
+.output-screenshot {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+li>img,
+h3+img {
+    width: 700px;
+}
+
 hr {
     border: 0;
     border-top: 1px solid #ddd;
@@ -61,11 +73,4 @@ footer {
     text-align: center;
     margin-top: 20px;
     color: #666;
-}
-
-/* Output screenshots styling */
-.output-screenshot {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
 }

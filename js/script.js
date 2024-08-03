@@ -14,6 +14,7 @@ let cards = {
          './Project-9/static/logo.png',
          './Project-10/static/logo.png',
          './Project-11/static/svg/favicon.svg',
+         './Project-12/static/logo.png',
         ],
     title: [
         'HTML Cheatsheet',
@@ -40,6 +41,7 @@ let cards = {
         'Notebook App is designed to offer a simple yet efficient way to manage notes. It uses local storage for data persistence and provides a user-friendly interface for interacting with notes.',
         'Netflix UI Clone is designed to replicate the user interface of Netflix, focusing on the FAQ section. It dynamically inserts questions and answers and handles click events to show or hide the answers.',
         'Implements a music streaming service with features like user login, playlist browsing, song playback, and volume control. The design is responsive and user-friendly, providing an engaging experience similar to Spotify.',
+        'Clutter Cleaner automates file organization in a specified folder based on file extensions, simplifying file management and retrieval.',
     ],
     tech: [
         ["HTML5"],
@@ -53,6 +55,7 @@ let cards = {
         ["HTML5", "CSS3", "JS", "BOOTSTRAP"],
         ["HTML5", "CSS3", "JS"],
         ["HTML5", "CSS3", "JS", 'POSTMAN'],
+        ["JS", 'NodeJS', 'NPM'],
     ],
     view: [
         './Project-1/details.html',
@@ -66,6 +69,7 @@ let cards = {
         './Project-9/readme.html',
         './Project-10/readme.html',
         './Project-11/readme.html',
+        './Project-12/readme.html',
     ]
 }
 

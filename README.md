@@ -8,6 +8,7 @@ This repository serves as a visual timeline of my coding evolution. From basic H
 
 ## Projects
 
+- **[Project 12: Clutter Cleaner Utility](./Project-12/)**
 - **[Project 11: Spotify Clone](./Project-11/)**
 - **[Project 10: Netflix UI Clone](./Project-10/)**
 - **[Project  9: Notebook App](./Project-9/)**

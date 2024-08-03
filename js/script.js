@@ -28,6 +28,7 @@ let cards = {
         'Notebook App',
         'Netflix UI Clone',
         'Spotify Clone',
+        'Clutter Cleaner',
     ],
     desc:[
         'HTML Cheatsheet serves as a quick reference guide for essential HTML elements and syntax',

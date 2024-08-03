@@ -112,7 +112,7 @@ Directory:
 
 ```
 
-   ![After](./static/snap%20shots/after%20clean.png)
+   ![After](./static/snap%20shots/After%20Clean.png)
 
 
 ## Contributing
